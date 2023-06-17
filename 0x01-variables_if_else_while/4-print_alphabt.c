@@ -8,17 +8,15 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int i = 97;
+	char i;
 
-	while (i <= 122)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		if (i == 101 || i == 111)
+		if (i != 'q' && i != 'e')
 		{
-			continue;
+			putchar(i);
 		}
-		putchar(i);
-		i++;
+		putchar('\n');
 	}
-	putchar('\n');
 	return (0);
 }
