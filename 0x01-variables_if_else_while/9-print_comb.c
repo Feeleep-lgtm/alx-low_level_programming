@@ -6,12 +6,17 @@
   */
 int main(void)
 {
-	int i = 0;
+	int i;
 
-	while (i <= 9)
+	for (i = 48; i <= 57; i++)
 	{
-		printf("%d, ", i);
-		i++;
+		putchar(i);
+		if (i == 57)
+		{
+			continue;
+		}
+			putchar(',');
+			putchar(' ');
 	}
 	putchar('\n');
 	return (0);
