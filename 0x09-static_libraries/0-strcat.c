@@ -1,10 +1,8 @@
 #include "main.h"
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
 /**
  * _strcat - concatenates two strings
  * @dest: input value
@@ -14,23 +12,23 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int x;
-	int y;
+	int i;
+	int j;
 
-	x = 0;
-	while (dest[x] != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		x++;
+		i++;
 	}
-	y = 0;
-	while (src[y] != '\0')
+	j = 0;
+	while (src[j] != '\0')
 	{
-		dest[x] = src[y];
-		x++;
-		y++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
 
-	dest[x] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
 
